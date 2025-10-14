@@ -4,11 +4,65 @@
 <head>
     <meta charset="utf-8">
     <title>Hello!</title>
+    <style>
+        /* Optional: Basic CSS to make the buttons look decent and stand out */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+
+        nav button {
+            padding: 10px 20px;
+            margin-right: 15px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        /* Style for the regular navigation buttons */
+        nav .nav-button {
+            background-color: #4CAF50;
+            /* Green */
+            color: white;
+        }
+
+        nav .nav-button:hover {
+            background-color: #45a049;
+        }
+
+        /* Distinct style for the Login button */
+        nav .login-button {
+            background-color: #f44336;
+            /* Red */
+            color: white;
+            font-weight: bold;
+        }
+
+        nav .login-button:hover {
+            background-color: #da190b;
+        }
+
+        /* Anchor tag inside the button should not show its default link style */
+        nav a {
+            text-decoration: none;
+            /* Ensure the text color is applied by the button class */
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Hello!</h1>
-    <p>Hi from Rust</p>
+    <h1>Welcome to the Rust Web Server!</h1>
+    <p>Hi from the main page of your custom-built Rust server.</p>
+
+    <hr>
+
+    <nav>
+        <a href="/about"><button class="nav-button">Go to About Page</button></a>
+        <a href="/contact"><button class="nav-button">Contact Us</button></a>
+
+        <a href="/login"><button class="login-button">User Login</button></a>
+    </nav>
 </body>
 
 </html>

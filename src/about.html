@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>About This Project</title>
+    <style>
+        /* Optional: Reuse the basic styling from the main page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+
+        nav button {
+            padding: 10px 20px;
+            margin-right: 15px;
+            cursor: pointer;
+            background-color: #007bff;
+            /* Blue for the Home button */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        nav button:hover {
+            background-color: #0056b3;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>RUST :: About Our Rust Web Server</h1>
+
+    <p>This is a custom web server built entirely in **Rust**, following the implementation details from **The Rust
+        Programming Language (The Book)**.</p>
+
+    <p>It currently features a simple **single-threaded architecture** with a **thread pool** for handling multiple
+        concurrent requests, demonstrating Rust's core concepts like ownership, concurrency primitives (channels), and
+        basic I/O operations.</p>
+
+    <hr>
+
+    <nav>
+        <a href="/"><button>Go Home</button></a>
+        <a href="/contact"><button>Contact Us</button></a>
+    </nav>
+</body>
+
+</html>
