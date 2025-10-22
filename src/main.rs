@@ -13,7 +13,8 @@ use web_server::ThreadPool;
     //Here , bind outs a Result<T,E> 
     //unwrap() will panic if there will be any runtime issues
 
-//here we create a thread pool (limited number of threads) and allocate
+//Web server implemntation for test
+///here we create a thread pool (limited number of threads) and allocate
 fn main() {
     let listener = TcpListener::bind("127.0.0.1:7878").unwrap();
 
